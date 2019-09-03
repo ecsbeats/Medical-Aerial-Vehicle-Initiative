@@ -1,2 +1,4 @@
 # Medical-Aerial-Vehicle-Initiative
-(Todo) Write this
+
+(Todo) Write some random stuff that makes are project look like it is
+  going to save the world and really sell the stuff.
