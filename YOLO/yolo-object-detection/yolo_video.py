@@ -7,9 +7,15 @@ import os
 YOLOPATH = "yolo-coco"
 CONFIDENCE = 0.5
 THRESHOLD = 0.3
+<<<<<<< HEAD
 VID = "people_are_cool.mp4"
 VIDPATH = os.path.sep.join(["videos", VID])
 OUTPUT = "people_are_cool.avi"
+=======
+VID = "airport.mp4"
+VIDPATH = os.path.sep.join(["videos", VID])
+OUTPUT = "output.avi"
+>>>>>>> 611fc978aca34a44c6956f24a36d76beb77b56ae
 
 # load the COCO class labels our YOLO model was trained on
 labelsPath = os.path.sep.join([YOLOPATH, "coco.names"])
@@ -68,9 +74,15 @@ while True:
 	blob = cv2.dnn.blobFromImage(image, 1 / 255.0, (416, 416),
 		swapRB=True, crop=False)
 	net.setInput(blob)
+<<<<<<< HEAD
 	start = time.time()
 	layerOutputs = net.forward(ln)
 	end = time.time()
+=======
+	# start = time.time()
+	layerOutputs = net.forward(ln)
+	# end = time.time()
+>>>>>>> 611fc978aca34a44c6956f24a36d76beb77b56ae
 
 	# show timing information on YOLO
 	# print("[INFO] YOLO took {:.6f} seconds".format(end - start))
